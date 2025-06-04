@@ -1,0 +1,11 @@
+.qrcode-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.qrcode {
+    width: 140px;
+    height: 140px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
