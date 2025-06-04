@@ -110,7 +110,7 @@ Exemplo:
 http://localhost:5173/?id=1
 ```
 
-![Screenshot](./public/assets/images/readme/Screenshot%202025-06-04%20at%2015.33.47.png)
+![Screenshot](./public/assets/images/readme/Screenshot%202025-06-04%20at%2017.16.07.png)
 
 ## 🔍 Endpoints da API (json-server)
 
