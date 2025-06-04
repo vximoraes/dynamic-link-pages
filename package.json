@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch dados.json --port 3000"
   },
   "devDependencies": {
     "typescript": "~5.8.3",
