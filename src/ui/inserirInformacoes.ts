@@ -9,7 +9,16 @@ export async function inserirInformacoes(
 ) {
     imagem.src = usuario.imagem
     nome.textContent = usuario.nome
-    document.body.style.background = usuario.background
+    if (typeof usuario.background === 'string' && usuario.background.trim().startsWith('url(')) {
+        document.body.style.backgroundImage = usuario.background;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundColor = '';
+    } else {
+        document.body.style.backgroundImage = '';
+        document.body.style.background = usuario.background;
+    }
     inserirLinks(usuario, linksContainer)
     qrcode.src = usuario.qrcode
 }
