@@ -4,11 +4,12 @@ import { inserirInformacoes } from './ui/inserirInformacoes'
 import { mensagemUsuarioNaoEncontrado } from './ui/mensagens'
 
 const params = new URLSearchParams(window.location.search)
-let id = params.get("id")
-
+const id = params.get("id")
 if (!id) {
     window.location.replace(window.location.pathname + '?id=1');
-} else {
+}
+
+if (id) {
     iniciarApp(id)
 }
 
