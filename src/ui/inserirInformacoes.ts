@@ -20,5 +20,10 @@ export async function inserirInformacoes(
         document.body.style.background = usuario.background;
     }
     inserirLinks(usuario, linksContainer)
-    qrcode.src = usuario.qrcode
+    
+    if (qrcode) {
+        const currentUrl = window.location.href;
+        qrcode.src = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(currentUrl)}&size=200x200`;
+        qrcode.alt = 'QR Code para esta página';
+    }
 }
