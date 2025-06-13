@@ -1,5 +1,6 @@
 export async function buscarUsuario(id: string) {
-    const usuario = await fetch(`http://localhost:3000/usuarios/${id}`)
+    const apiUrl = import.meta.env.VITE_API_URL;
+    const usuario = await fetch(`${apiUrl}/usuarios/${id}`)
     if(!usuario.ok) {
         return null
     }
