@@ -1,0 +1,9 @@
+@media (max-width: 400px) {
+    .links-container {
+        max-width: 98vw;
+    }
+    .qrcode {
+        width: 100px;
+        height: 100px;
+    }
+}
