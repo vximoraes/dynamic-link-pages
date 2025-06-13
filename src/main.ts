@@ -1,7 +1,7 @@
 import '../public/assets/css/style.css'
 import { buscarUsuario } from './api/usuarioApi'
 import { inserirInformacoes } from './ui/inserirInformacoes'
-import { mensagemSemId, mensagemUsuarioNaoEncontrado } from './ui/mensagens'
+import { mensagemUsuarioNaoEncontrado } from './ui/mensagens'
 
 const params = new URLSearchParams(window.location.search)
 let id = params.get("id")
