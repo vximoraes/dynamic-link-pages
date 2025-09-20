@@ -1,8 +1,8 @@
-# Páginas de Links Dinâmicas
+# 📖 Páginas de Links Dinâmicas
 
 Projeto acadêmico experimental que utiliza um arquivo JSON, **json-server** e **Vite** para gerar páginas de links de usuários de forma dinâmica.
 
-## 📖 Visão Geral
+## Visão Geral
 
 Este projeto lê o arquivo `dados.json` com perfis de usuários e seus links, expõe uma API REST com **json-server** e constrói um frontend com **Vite** e **TypeScript**. As páginas são renderizadas dinamicamente com base em parâmetros de URL (ex.: `?id=1`), exibindo foto do usuário, nome, lista personalizada de links e um QRCode.
 
@@ -46,7 +46,7 @@ Exemplo de layout gerado através das informações contidas no JSON:
 }
 ```
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Servir o `dados.json` como API REST usando **json-server**
 - Renderização no cliente com **Vite**, **TypeScript** e manipulação direta do DOM
@@ -54,20 +54,20 @@ Exemplo de layout gerado através das informações contidas no JSON:
 - Layout responsivo e estilos personalizáveis
 - Estrutura modular: camada de API, helpers de UI e tratamentos de mensagens
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **json-server**: mock de API REST a partir de um arquivo JSON
 - **Vite**: servidor de desenvolvimento rápido e bundler moderno
 - **TypeScript**: tipagem estática e recursos avançados de JS
 - **CSS**: estilos modulares em `public/assets/css`
 
-## 📦 Pré-requisitos
+## Pré-requisitos
 
 - Node.js (v14 ou superior)
 - npm ou yarn
 - **json-server**: instale localmente na pasta base com `npm install json-server`. Veja a [documentação oficial](https://www.npmjs.com/package/json-server).
 
-## ⚡️ Configuração e Instalação
+## Configuração e Instalação
 
 1. **Clonar o repositório**
 
@@ -100,7 +100,7 @@ Exemplo de layout gerado através das informações contidas no JSON:
    # ou yarn dev
    ```
 
-## 📊 Como Utilizar
+## Como Utilizar
 
 Acesse no navegador: `http://localhost:5173/?id=<ID_DO_USUÁRIO>` para visualizar a página de links dinâmica.
 
@@ -112,7 +112,7 @@ http://localhost:5173/?id=1
 
 ![Screenshot](./public/assets/images/readme/Screenshot%202025-06-04%20at%2017.16.07.png)
 
-## 🔍 Endpoints da API (json-server)
+## Endpoints da API (json-server)
 
 O **json-server** expõe automaticamente um conjunto completo de rotas REST para o recurso `usuarios` baseado no arquivo `dados.json`:
 
@@ -125,7 +125,7 @@ O **json-server** expõe automaticamente um conjunto completo de rotas REST para
 
 A estrutura dos dados segue o arquivo `dados.json` na raiz do projeto.
 
-## 🗂️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 ├── dados.json            # fonte de dados para o json-server
@@ -142,10 +142,10 @@ A estrutura dos dados segue o arquivo `dados.json` na raiz do projeto.
 └── vite.config.ts        # configuração do Vite 
 ```
 
-## 📝 Personalização
+## Personalização
 
 - Edite `dados.json` para adicionar, remover ou modificar perfis de usuários e seus links.
 
-## 📜 Licença
+## Licença
 
 Este projeto está licenciado sob a **Licença MIT**. Veja [LICENSE](LICENSE) para mais detalhes.
